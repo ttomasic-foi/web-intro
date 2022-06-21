@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <title>Popis pjesama i knjiga</title>
+    <link rel="icon" type="image/x-icon" href="../materijali/favicon.ico"/>
+    <meta name="author" content="Tin Tomašić"/>
+    <meta name="description" content="<table>,<th>,<iframe>"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/ttomasic20.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/ttomasic20_responzivni_dizajn.css"/>
+    <link rel="stylesheet" type="text/css" media="print" href="../css/ttomasic20_ispis.css"/>
+    <!-- js -->
+    <script src="../js/ttomasic20.js"></script>
+</head>
+
+<body>
+<header id="header">
+    <noscript>
+        <dialog>Vaš Web preglednik ne podržava JavaScript!</dialog>
+    </noscript>
+    <a href="/index">
+        <img class="icon-large" src="../materijali/elvis-bw.png" alt="Logo stranice"/>
+    </a>
+    <button id="edit" class="icon-small"></button>
+    <div id="helloMessage">
+        <p id="hello" class="text-right">Pozdrav, {}!</p>
+        <p id="goodbye" class="text-right">Valjano do {}.</p>
+        <a class="text-right" href="/logout">Odjavi me</a>
+    </div>
+    <h1></h1>
+</header>
+
+<nav class="text-center">
+    <a href="/index">Početna</a>
+    <a href="/form">Unos pjesama</a>
+    <a href="/data/songs">Popis pjesama i knjiga</a>
+    <a href="/other/author">O autoru</a>
+    <a href="/other/multimedia">Multimedija</a>
+    <a href="/other/creative">BTW, Elvis...</a>
+</nav>
+
+<main>
+    @table
+    <iframe width="400" height="550" title="Pregled omiljenih knjiga" src="/data/books" allowfullscreen></iframe>
+</main>
+
+<footer class="text-center">
+    <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank"><img src="../materijali/mit-logo.png"
+                                                                             alt="MIT logo" height="16"/></a>
+    Copyright &copy; 2022.
+    <a href="mailto:tin.tomasic74@gmail.com">Tin Tomašić</a>
+    <br>
+    <a href="#header"><img src="../materijali/back-to-top.png" alt="Povratak na zaglavlje stranice"
+                           height="24"/></a>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+[
+  [
+    {
+      "src": "https://patch.com/img/cdn20/users/22973312/20190108/054012/styles/raw/public/processed_images/shutterstock_390896nz-1546987212-450.jpg",
+      "caption": "1937. Elvis s napunjene dvije godine."
+    },
+    {
+      "src": "https://static.onecms.io/wp-content/uploads/sites/20/2018/10/graceland-2.jpg",
+      "caption": "1957. Elvis je izdvojio 102.500 američkih dolara za Graceland, vilu u Memphisu koja mu je dva desetljeća služila kao dom."
+    },
+    {
+      "src": "https://assets.speakcdn.com/assets/2597/elvisarmy2_verticalresponsive.jpg",
+      "caption": "1958. Elvis je uvršten u vojsku SAD-a."
+    },
+    {
+      "src": "https://patch.com/img/cdn20/users/22973312/20190108/072817/styles/raw/public/processed_images/elvis%20presley%20blue%20hawaii-1546993697-623.jpg",
+      "caption": "1961. Elvis se šali na snimanju filma, glazbene komedije <i>Blue Hawaii</i>."
+    },
+    {
+      "src": "https://assets.speakcdn.com/assets/2597/internationalhotel2_verticalresponsive.jpg",
+      "caption": "1969. Elvis je rezerviran za četiri tjedna, 57 nastupa u hotelu International u Las Vegasu, koji je upravo izgrađen i ima najveći izložbeni prostor u gradu."
+    },
+    {
+      "src": "https://i.pinimg.com/originals/6c/0b/a6/6c0ba6eaeebeba7f9203d35f95469d2b.jpg",
+      "caption": "1970. Elvis, supruga Priscillia i njihova kćer Lisa-Marie poziraju za obiteljski portret."
+    },
+    {
+      "src": "https://preview.redd.it/7ziq5q27rje71.jpg?auto=webp&s=81ebb60782a6967eac224966daf2d8e667078f66",
+      "caption": "1977. Elvisov posljednji nastup, Market Square Arena, Indianapolis."
+    }
+  ],
+  [
+    {
+      "src": "../materijali/ep-backstage.mp4",
+      "type": "video/mp4",
+      "poster": "https://i.ytimg.com/vi/UfD6qwcQRbg/hqdefault.jpg"
+    },
+    {
+      "src": "../materijali/ep-rare-footage.mp4",
+      "type": "video/mp4",
+      "poster": "https://i.ytimg.com/vi/yW8-90P5IUg/maxresdefault.jpg"
+    },
+    {
+      "src": "../materijali/ep-carny.mp4",
+      "type": "video/mp4",
+      "poster": "https://m.media-amazon.com/images/I/81kQCAptPrL._SS500_.jpg"
+    },
+    {
+      "src": "../materijali/ep-hound-dog.mp4",
+      "type": "video/mp4",
+      "poster": "https://www.beachamjournal.com/.a/6a01053653b3c7970b026bded65c89200c-600wi"
+    },
+    {
+      "src": "../materijali/ep-entertainer.mp4",
+      "type": "video/mp4",
+      "poster": "https://res.protv.ro/assets/protv/2020/08/18/image_galleries/76160/secretul-de-la-inmormantarea-lui-elvis-presley-dezvaluit-dupa-43-de-ani_2_size20.jpg"
+    }
+  ],
+  [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2e/BlueMoonOfKentucky.ogg",
+      "type": "audio/ogg"
+    },
+    {
+      "src": "../materijali/hound-dog-aloha-from-hawaii-live-in-honolulu-1973.mp3",
+      "type": "audio/mp3"
+    },
+    {
+      "src": "../materijali/blue-suede-shoes-aloha-from-hawaii-live-in-honolulu-1973.mp3",
+      "type": "audio/mp3"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/pt/0/0d/Love_Me_Tender_por_Elvis_Presley.ogg",
+      "type": "audio/ogg"
+    },
+    {
+      "src": "../materijali/without-a-song.mp3",
+      "type": "audio/mp3"
+    }
+  ]
+]

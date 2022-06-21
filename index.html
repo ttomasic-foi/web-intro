@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <title>Početna</title>
+    <link rel="icon" type="image/x-icon" href="materijali/favicon.ico"/>
+    <meta name="author" content="Tin Tomašić"/>
+    <meta name="description" content="<h2>,<ul>,<li>"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ttomasic20.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ttomasic20_responzivni_dizajn.css"/>
+    <link rel="stylesheet" type="text/css" media="print" href="css/ttomasic20_ispis.css"/>
+    <!-- js -->
+    <script src="js/ttomasic20.js"></script>
+</head>
+
+<body>
+<header id="header">
+    <noscript>
+        <dialog>Vaš Web preglednik ne podržava JavaScript!</dialog>
+    </noscript>
+    <a href="/index">
+        <img class="icon-large" src="materijali/elvis-bw.png" alt="Logo stranice"/>
+    </a>
+    <button id="edit" class="icon-small"></button>
+    <div id="helloMessage">
+        <p id="hello" class="text-right">Pozdrav, {}!</p>
+        <p id="goodbye" class="text-right">Valjano do {}.</p>
+        <a class="text-right" href="/logout">Odjavi me</a>
+    </div>
+    <h1></h1>
+</header>
+
+<nav class="text-center">
+    <a href="/index">Početna</a>
+    <a href="/form">Unos pjesama</a>
+    <a href="/data/songs">Popis pjesama i knjiga</a>
+    <a href="/other/author">O autoru</a>
+    <a href="/other/multimedia">Multimedija</a>
+    <a href="/other/creative">BTW, Elvis...</a>
+</nav>
+
+<main>
+    <div class="text-center">
+        <figure>
+            <img src="materijali/elvis-cape.jpg" alt="Madison Square Garden kombinezon i ogrtač s ušicama"
+                 usemap="#photoContent"/>
+            <figcaption class="text-center">Elvis Presley Madison Square Garden kombinezon i ogrtač s ušicama
+            </figcaption>
+        </figure>
+        <map name="photoContent">
+            <!-- Head -->
+            <area alt="Galerija" href="ostalo/multimedija.html#photo" title="Galerija" coords="390,120,70"
+                  shape="circle">
+            <!-- Body -->
+            <area alt="Audio zapisi" href="ostalo/multimedija.html#audio" title="Audio zapisi"
+                  coords="266,449,275,406,276,364,286,353,275,267,214,262,131,216,83,236,88,178,58,150,65,106,100,111,116,146,267,193,327,172,343,153,346,102,371,66,408,57,443,80,462,115,457,163,450,178,492,191,605,149,621,118,662,119,672,148,638,178,517,267,477,270,443,364,448,449"
+                  shape="poly">
+            <!-- Cape -->
+            <area alt="Video materijali" href="ostalo/multimedija.html#video" title="Video materijali"
+                  coords="70,50,660,450" shape="rect">
+        </map>
+        <div id="areaDescription" class="box-info">
+        </div>
+        <p id="homeParagraph" class="text-justify">
+            Slavni Bill Belew poznat je po stvaranju nekih od najpoznatijih komada garderobe i kostima za rock and
+            roll
+            zvijezde. Ansambl koji je dizajnirao za Elvisa Preslya, postao je jedan od najfotografiranih i
+            najikoničnijih kostima u Elvisovoj karijeri i obilježio je njegov prvi nastup uživo u Madison Square
+            Gardenu
+            u New Yorku. Očito je da popularnost Elvisa ostaje ista kao i uvijek, a kolekcionari diljem svijeta jure
+            za
+            njegovim suvenirnicama. Nažalost, vrlo malo artikala postaje dostupno na otvorenom tržištu. Kombinezon i
+            ogrtač bili su u privatnoj kolekciji više od 30 godina prije nego što su otišli na dražbu. Početkom
+            rujna
+            prošle godine, kombinezon i ogrtač s ušicama Elvisa Presleya, s njegovih nastupa iz 1972. u Madison
+            Square
+            Gardenu, prodani su za rekordnih 1.012.500 američkih dolara!
+        </p>
+    </div>
+
+    <h2>JavaScript animacije:</h2>
+    <ul>
+        <li>
+            <a href="/index">Povećanje-smanjivanje sadržaja</a> - klikom na <b>naslov bilo
+            koje stranice</b>, javlja se
+            animacija smanjenja i povećanja.
+        </li>
+        <li>
+            <a href="/index">Rotiranje sadržaja</a> - sve stranice imaju u <b>donjem
+            desnom kutu ikonu</b> za
+            povratak na zaglavlje koja se rotira kada je miš iznad nje!
+        </li>
+        <li>
+            <a href="/index">Simulacija pisanja sadržaja</a> - nakon učitavanja stranice,
+            <b>naslov stranice</b> se <i>ispisuje</i>
+            slovo po slovo.
+        </li>
+    </ul>
+    <button id="btnShowForm" class="btn btn-primary mb-3">Prikaži formu za statistiku</button>
+    <form id="frmStats" class="text-center form-center hidden" action="/stats" method="post" novalidate>
+        <fieldset>
+            <legend>Dodaj novu kolumnu!</legend>
+            <!-- name -->
+            <div>
+                <label for="name">Naziv kolumne:</label>
+                <br>
+                <input type="text" id="name" name="primary-color" required>
+            </div>
+            <!-- value -->
+            <div>
+                <label for="value">Vrijednost:</label>
+                <br>
+                <input type="number" id="value" name="value" required>
+            </div>
+        </fieldset>
+        <br>
+        <button id="btnHideForm" class="btn btn-secondary">Sakrij formu</button>
+        <input class="btn btn-primary" type="submit" value="Ažuriraj statistiku"/>
+        <br><br>
+    </form>
+    <template id="statisticsTemplate">
+        <canvas id="mainCanvas" width="600px" height="400px"></canvas>
+    </template>
+</main>
+
+<footer class="text-center">
+    <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank"><img src="materijali/mit-logo.png"
+                                                                             alt="MIT logo" height="16"/></a>
+    Copyright &copy; 2022.
+    <a href="mailto:tin.tomasic74@gmail.com">Tin Tomašić</a>
+    <br>
+    <a href="#header"><img src="materijali/back-to-top.png" alt="Povratak na zaglavlje stranice" height="24"/></a>
+</footer>
+</body>
+
+</html>

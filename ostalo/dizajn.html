@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <title>Dizajn</title>
+    <link rel="icon" type="image/x-icon" href="../materijali/favicon.ico"/>
+    <meta name="author" content="Tin Tomašić"/>
+    <meta name="description" content="..."/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/ttomasic20.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/ttomasic20_responzivni_dizajn.css"/>
+    <link rel="stylesheet" type="text/css" media="print" href="../css/ttomasic20_ispis.css"/>
+    <!-- js -->
+    <script src="../js/ttomasic20.js"></script>
+</head>
+
+<body>
+<header id="header">
+    <noscript>
+        <dialog>Vaš Web preglednik ne podržava JavaScript!</dialog>
+    </noscript>
+    <a href="/index">
+        <img class="icon-large" src="../materijali/elvis-bw.png" alt="Logo stranice"/>
+    </a>
+    <div id="helloMessage">
+        <p id="hello" class="text-right">Pozdrav, {}!</p>
+        <p id="goodbye" class="text-right">Valjano do {}.</p>
+        <a class="text-right" href="/logout">Odjavi me</a>
+    </div>
+    <h1></h1>
+</header>
+
+<nav class="text-center">
+    <a href="/index">Početna</a>
+    <a href="/form">Unos pjesama</a>
+    <a href="/data/songs">Popis pjesama i knjiga</a>
+    <a href="/other/author">O autoru</a>
+    <a href="/other/multimedia">Multimedija</a>
+    <a href="/other/creative">BTW, Elvis...</a>
+</nav>
+
+<main>
+    <form id="frmEdit" class="text-center form-center" action="/edit" method="post" novalidate>
+        <fieldset>
+            <legend>Kreiraj dizajn po vlastitoj želji!</legend>
+            <!-- primary color -->
+            <div>
+                <label for="primary-color">Primarna boja (pozadina):</label>
+                <br>
+                <input type="color" id="primary-color" name="primary-color">
+            </div>
+            <!-- secondary color -->
+            <div>
+                <label for="secondary-color">Sekundarna boja:</label>
+                <br>
+                <input type="color" id="secondary-color" name="secondary-color">
+            </div>
+            <!-- title size -->
+            <div>
+                <label for="title-size">Veličina naslova (px):</label>
+                <br>
+                <input type="number" id="title-size" name="title-size" required>
+            </div>
+            <!-- text-transform -->
+            <div id="text-transformations">
+                <label for="text-transform">Stil teksta:</label>
+                <br>
+                <label>
+                    <input type="radio" name="text-transformation" id="text-transform" required value="none">
+                    inicijalno
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="text-transformation" value="lowercase">
+                    mala slova
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="text-transformation" value="capitalize">
+                    prvo slovo veliko
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="text-transformation" value="uppercase">
+                    velika slova
+                </label>
+            </div>
+            <!-- opacity -->
+            <div>
+                <label for="opacity">Neprozirnost (%):</label>
+                <br>
+                <input type="number" id="opacity" name="opacity" required>
+            </div>
+        </fieldset>
+        <br>
+        <!-- Reset (8) -->
+        <input class="btn btn-secondary" type="reset" value="Vrati početne postavke"/>
+        <!-- Submit (9) -->
+        <input class="btn btn-primary" type="submit" value="Promijeni"/>
+        <br><br>
+    </form>
+</main>
+
+<footer class="text-center">
+    <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank"><img src="../materijali/mit-logo.png"
+                                                                             alt="MIT logo" height="16"/></a>
+    Copyright &copy; 2022.
+    <a href="mailto:tin.tomasic74@gmail.com">Tin Tomašić</a>
+    <br>
+    <a href="#header"><img src="../materijali/back-to-top.png" alt="Povratak na zaglavlje stranice"
+                           height="24"/></a>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <title>Prijava</title>
+    <link rel="icon" type="image/x-icon" href="materijali/favicon.ico"/>
+    <meta name="author" content="Tin Tomašić"/>
+    <meta name="description" content="<figure>,<map>,<area>"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ttomasic20.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ttomasic20_responzivni_dizajn.css"/>
+    <link rel="stylesheet" type="text/css" media="print" href="css/ttomasic20_ispis.css"/>
+    <!-- js -->
+    <script src="js/ttomasic20.js"></script>
+</head>
+
+<body>
+<header id="header">
+    <noscript>
+        <dialog>Vaš Web preglednik ne podržava JavaScript!</dialog>
+    </noscript>
+    <a href="/index">
+        <img class="icon-large" src="materijali/elvis-bw.png" alt="Logo stranice"/>
+    </a>
+    <h1></h1>
+</header>
+
+<main>
+    <form id="login" class="text-center form-center" action="/login"
+          method="post"
+          novalidate>
+        <fieldset>
+            <legend>Unesi podatke</legend>
+            <div>
+                <!-- username -->
+                <label for="username">Korisničko ime:</label>
+                <br>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div>
+                <!-- password -->
+                <label for="password">Lozinka:</label>
+                <br>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div>
+                <!-- cookie age -->
+                <label for="cookie-age">Trajanje kolačića (s):</label>
+                <br>
+                <input type="number" id="cookie-age" name="cookie-age" required/>
+            </div>
+        </fieldset>
+        <br>
+        <input class="btn btn-primary" type="submit" value="Prijavi se"/>
+        <br><br>
+    </form>
+</main>
+
+<footer class="text-center">
+    <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank"><img src="materijali/mit-logo.png"
+                                                                             alt="MIT logo" height="16"/></a>
+    Copyright &copy; 2022.
+    <a href="mailto:tin.tomasic74@gmail.com">Tin Tomašić</a>
+    <br>
+    <a href="#header"><img src="materijali/back-to-top.png" alt="Povratak na zaglavlje stranice" height="24"/></a>
+</footer>
+</body>
+
+</html>

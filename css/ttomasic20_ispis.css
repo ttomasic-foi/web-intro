@@ -1,0 +1,85 @@
+* {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+header,
+nav,
+footer {
+    display: none;
+}
+
+.btn {
+    display: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+
+#video,
+#audio {
+    display: none;
+}
+
+#homeParagraph {
+    padding: 20px;
+    border: 4px solid red;
+    border-radius: 7px;
+}
+
+.icon-media {
+    width: 100%;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, max(340px, 100% / 2)), 1fr));
+}
+
+iframe {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border-color: brown;
+    border-width: 1px;
+    border-style: dashed;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table {
+    border-width: 2px;
+    border-style: groove;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+fieldset {
+    border-radius: 7px;
+    border-width: medium;
+    border-style: solid;
+    border-color: var(--third);
+}
+
+thead tr th {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+table > caption {
+    font-style: italic;
+    font-weight: 500;
+    font-size: large;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
+fieldset > legend ~ label {
+    font-weight: 500;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <title>Unos pjesama</title>
+    <link rel="icon" type="image/x-icon" href="materijali/favicon.ico"/>
+    <meta name="author" content="Tin Tomašić"/>
+    <meta name="description" content="<form>,<select>,<legend>"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ttomasic20.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ttomasic20_responzivni_dizajn.css"/>
+    <link rel="stylesheet" type="text/css" media="print" href="css/ttomasic20_ispis.css"/>
+    <!-- js -->
+    <script src="js/ttomasic20.js"></script>
+</head>
+
+<body>
+<header id="header">
+    <noscript>
+        <dialog>Vaš Web preglednik ne podržava JavaScript!</dialog>
+    </noscript>
+    <a href="/index">
+        <img class="icon-large" src="materijali/elvis-bw.png" alt="Logo stranice"/>
+    </a>
+    <button id="edit" class="icon-small"></button>
+    <div id="helloMessage">
+        <p id="hello" class="text-right">Pozdrav, {}!</p>
+        <p id="goodbye" class="text-right">Valjano do {}.</p>
+        <a class="text-right" href="/logout">Odjavi me</a>
+    </div>
+    <h1></h1>
+</header>
+
+<nav class="text-center">
+    <a href="/index">Početna</a>
+    <a href="/form">Unos pjesama</a>
+    <a href="/data/songs">Popis pjesama i knjiga</a>
+    <a href="/other/author">O autoru</a>
+    <a href="/other/multimedia">Multimedija</a>
+    <a href="/other/creative">BTW, Elvis...</a>
+</nav>
+
+<main>
+    <form id="musicForm" class="form-multi" enctype="multipart/form-data" action="https://spider.foi.hr/OWT/materijali/ispis_forme.php"
+          method="post" novalidate>
+        <fieldset>
+            <legend>Opis glazbenog proizvoda</legend>
+
+            <!-- Music product name (1) -->
+            <label for="mpName">Naziv:</label>
+            <input type="text" id="mpName" name="mpName" placeholder="Elvis recorded Live on Stage in Memphis"
+                   size="40" required>
+            <br>
+
+            <!-- Songs (2) -->
+            <label for="songs">Popis pjesama:</label>
+            <br>
+            <textarea id="songs" name="songs" cols="40" rows="10" maxlength="1000"></textarea>
+            <br>
+
+            <!-- Music type (3) -->
+            <label for="musicType">Vrsta proizvoda:</label>
+            <div id="musicTypes">
+                <label>
+                    <input type="radio" name="musicType" id="musicType" required value="Singl">
+                    Singl
+                </label>
+                <label>
+                    <input type="radio" name="musicType" value="EP">
+                    EP
+                </label>
+                <label>
+                    <input type="radio" name="musicType" value="Album">
+                    Album
+                </label>
+                <label>
+                    <input type="radio" name="musicType" value="Kompilacija">
+                    Kompilacija
+                </label>
+                <label>
+                    <input type="radio" name="musicType" value="Ostalo">
+                    Ostalo
+                </label>
+            </div>
+
+            <!-- Release date & time (6) -->
+            <label for="releaseDateTime">Datum i vrijeme izdavanja:</label>
+            <input type="text" id="releaseDateTime" name="releaseDateTime"/>
+            <br>
+
+            <!-- Genres (5) -->
+            <label for="genres">Žanrovi:</label>
+            <br>
+            <select id="genres" name="genre[]" multiple size="5">
+                <option value="-1">--== Odaberi žanrove ==--</option>
+                <optgroup label="Rock">
+                    <option value="rockabilly">Rockabilly</option>
+                    <option value="rnr">Rock and roll</option>
+                </optgroup>
+                <optgroup label="Popularna glazba">
+                    <option value="pop">Pop</option>
+                    <option value="country">Country</option>
+                </optgroup>
+                <optgroup label="Blues">
+                    <option value="blues">Blues</option>
+                    <option value="rnb">Rhythm and blues</option>
+                </optgroup>
+                <optgroup label="Kršćanska glazba">
+                    <option value="gospel">Gospel</option>
+                </optgroup>
+            </select>
+            <br>
+
+            <!-- Languages (7.1) -->
+            <label for="en">Jezici:</label>
+            <div id="musicLanguage">
+                <input type="checkbox" id="en" name="lang[]" value="en"/>
+                <label for="en">Engleski</label>
+                <br>
+                <input type="checkbox" id="es" name="lang[]" value="es"/>
+                <label for="es">Španjolski</label>
+                <br>
+                <input type="checkbox" id="de" name="lang[]" value="de"/>
+                <label for="de">Njemački</label>
+            </div>
+
+            <!-- Music product cover (7.2) -->
+            <label for="mpCover">Prenesi naslovnicu proizvoda:</label>
+            <input type="file" id="mpCover" accept="image/png, image/jpg, image/jpeg" name="mpCover"/>
+            <br>
+
+            <!-- Author -->
+            <label for="mpAuthor">Web stanica autora:</label>
+            <input type="url" id="mpAuthor" name="mpAuthor"/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dodatno - korisnik</legend>
+
+            <!-- Rating (4) -->
+            <label for="rating">Ocjena:</label>
+            <input type="number" id="rating" name="rating" required/>
+            <br>
+
+            <!-- Color (7.3) -->
+            <label for="musicColor">Emocije glazbenog proizvoda u boji:</label>
+            <input type="color" id="musicColor" name="musicColor" value="#ffff00"/>
+            <br>
+
+            <!-- Price (7.4) -->
+            <label for="mpPrice">Cijena:</label>
+            <input type="range" id="mpPrice" name="mpPrice" min="0" max="150" value="5"/>
+            <output>5&euro;</output>
+        </fieldset>
+
+        <div class="actions">
+            <!-- Reset (8) -->
+            <input class="btn btn-secondary" type="reset" value="Inicijaliziraj"/>
+
+            <!-- Submit (9) -->
+            <input class="btn btn-primary" type="submit" value="Dalje"/>
+        </div>
+    </form>
+    <br>
+</main>
+
+<footer class="text-center">
+    <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank"><img src="materijali/mit-logo.png"
+                                                                             alt="MIT logo" height="16"/></a>
+    Copyright &copy; 2022.
+    <a href="mailto:tin.tomasic74@gmail.com">Tin Tomašić</a>
+    <br>
+    <a href="#header"><img src="materijali/back-to-top.png" alt="Povratak na zaglavlje stranice" height="24"/></a>
+</footer>
+</body>
+
+</html>

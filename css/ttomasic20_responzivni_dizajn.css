@@ -1,0 +1,29 @@
+@media screen and (max-width: 480px) {
+    nav > a {
+        display: block;
+        float: none;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .thumbnail:hover {
+        transform: scale(1.24);
+    }
+
+    .form-center {
+        width: auto;
+        zoom: normal;
+    }
+
+    th,
+    td {
+        display: none;
+    }
+
+    th:nth-of-type(1),
+    th:nth-of-type(2),
+    td:nth-of-type(1),
+    td:nth-of-type(2) {
+        display: table-cell;
+    }
+}
